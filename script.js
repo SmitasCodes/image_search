@@ -3,7 +3,7 @@ function fetchImages() {
     main.innerHTML = "";
     event.preventDefault();
     let input = document.querySelector("#input").value;
-    let url = "https://api.unsplash.com/search/photos?page=1&per_page=40&query=";
+    let url = "https://api.unsplash.com/search/photos?page=2&per_page=28&query=";
     const clientID = "&client_id=jmzALUdqPjI35eGjTFB6eKSIFrKD1tP_ZJgRnq3w59M";
 
     if (input.length <= 0) {
@@ -23,13 +23,3 @@ function fetchImages() {
             })
     }
 }
-
-// Potentialy useful code
-
-// let div = document.createElement("div");
-// div.classList.add("column")
-// main.appendChild(div)
-// let img = document.createElement("img");
- // img.src = images.results[i].urls.small;
-// main.appendChild(img)
-                    
